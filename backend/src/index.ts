@@ -10,8 +10,8 @@ export default Canister({
     }),
     // Update calls take a few seconds to complete
     // This is because they persist state changes and go through consensus
-    setMessage: update([text], Void, (newMessage) => {
-        message = newMessage; // This change will be persisted
+    setMessage: update([text], Void, (newMessage:any) => {
+        message = newMessage; // Thi will be persisted
     })
 });
 
