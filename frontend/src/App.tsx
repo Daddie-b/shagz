@@ -1,34 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Routes, Route, useLocation } from "react-router-dom";
+//importing react slick slider
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+import { animateScroll } from "react-scroll";
+
+import NavBar from "./components/organs/NavBar"
+import Home from "./components/pages/Home";
+import { useEffect } from "react";
+import Footer from "./components/organs/Footer";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const directory = useLocation();
+  useEffect(() => {
+    animateScroll.scrollToTop({
+      duration: 0,
+    });
+  }, [directory.pathname]);
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="w-full bg-white text-gray-950 font-poppins">
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      <Footer />
+    </div>
   )
 }
 
