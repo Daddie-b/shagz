@@ -6,13 +6,13 @@ const Header = styled.header`
   background-color: #3498db;
   padding: 2em 0;
   color: #fff;
-  margin-top: 40px;
+  margin-top: 140px;
   text-align: center;
 `;
 
 const StickyNav = styled.nav`
   background-color: #333;
-  padding: 1em 0;
+  padding: 40px 0;
   position: fixed;
   width: 100%;
   top: 0;
