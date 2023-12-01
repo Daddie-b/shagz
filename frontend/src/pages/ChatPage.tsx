@@ -27,6 +27,9 @@ const TabLink = styled(NavLink)`
   }
 `;
 
+const Chats = () => <div>Chats Content</div>;
+const Community = () => <div>Community Content</div>;
+const Updates = () => <div>Updates Content</div>;
 
 const ChatPage: React.FC = () => {
   const [activeTab, setActiveTab] = useState<string>('');
@@ -52,7 +55,7 @@ const ChatPage: React.FC = () => {
           </TabLink>
         </TabsContainer>
       </ChatContainer>
-      </>
+    </>
   );
 };
 
