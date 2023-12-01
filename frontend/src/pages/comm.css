@@ -1,0 +1,27 @@
+.card{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding:5px;
+    margin:auto;
+    background:rgb(125, 125, 156);
+    margin-top:5px;
+}
+.status{
+    text-align: center;
+}
+.image, .content{
+    max-width: 100px;
+}
+
+img{
+    width: 100%;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+.txt{
+    padding-left: 30px;
+    font-size: 22px;
+    font-weight: bold;
+}

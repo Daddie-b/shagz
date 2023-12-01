@@ -8,6 +8,7 @@ import ChatsTab from "./pages/ChatsTab";
 import CommunityTab from "./pages/CommunityTab";
 import UpdatesTab from "./pages/UpdatesTab";
 
+
 function App() {
   return (
     <Routes >
@@ -15,9 +16,9 @@ function App() {
       <Route path='/Login' element={<Login/>}/>
       <Route path='/Signup' element={<Signup/>}/>
       <Route path="/ChatPage" element={<ChatPage/>}/>
-      <Route path="Chats" element={<ChatsTab/>}/>
-      <Route path="Communities" element={<CommunityTab/>}/>
-      <Route path="Updates" element={<UpdatesTab/>}/>
+      <Route path="/chatpage/Chats" element={<ChatsTab/>}/>
+      <Route path="/Communities" element={<CommunityTab/>}/>
+      <Route path="/chatpage/Updates" element={<UpdatesTab/>}/>
     </Routes>
   );
 }

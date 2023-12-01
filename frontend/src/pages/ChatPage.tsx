@@ -47,7 +47,7 @@ const ChatPage: React.FC = () => {
           <TabLink to="chats" className={activeTab === '/chats' ? 'active' : ''}>
             Chats
           </TabLink>
-          <TabLink to="community" className={activeTab === '/community' ? 'active' : ''}>
+          <TabLink to="/communities" className={activeTab === '/communities' ? 'active' : ''}>
             Community
           </TabLink>
           <TabLink to="updates" className={activeTab === '/updates' ? 'active' : ''}>
