@@ -39,7 +39,7 @@ interface FormData {
   confirmPassword: string;
 }
 
-const SignupPage: React.FC = () => {
+const Signup: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({
     phoneNumber: '',
     username: '',
@@ -136,4 +136,4 @@ const SignupPage: React.FC = () => {
   );
 };
 
-export default SignupPage;
+export default Signup;
